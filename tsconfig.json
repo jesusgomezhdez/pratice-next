@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "@database": ["database/db.ts"],
+      "@components/*": ["components/*"],
+    },
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
